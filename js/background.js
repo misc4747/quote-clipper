@@ -2,7 +2,7 @@ const updateContextMenus = async () => {
   await chrome.contextMenus.removeAll();
   chrome.contextMenus.create({
       id: "quote-select-text",
-      title: "選択範囲をMisskeyの引用形式でコピー",
+      title: "選択範囲を引用形式でコピー",
       contexts: ["all"]
   });
 };
