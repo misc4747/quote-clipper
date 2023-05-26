@@ -1,5 +1,5 @@
 {
-  "name": "選択範囲をMisskeyの引用形式でコピーする君",
+  "name": "Text Quoter",
   "description": "選択テキストの各行の始めに\"> \"をつけて、クリップボードにコピーします。",
   "version": "1.0",
   "manifest_version": 3,
