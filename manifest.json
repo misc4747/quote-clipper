@@ -1,5 +1,5 @@
 {
-  "name": "Text Quoter",
+  "name": "Quote Clipper",
   "description": "選択テキストの各行の始めに\"> \"をつけて、クリップボードにコピーします。",
   "version": "1.0",
   "manifest_version": 3,
