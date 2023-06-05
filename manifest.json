@@ -10,6 +10,15 @@
   "icons": {
     "48": "img/icon48.png"
   },
+  "commands": {
+    "quote-clipper": {
+      "suggested_key": {
+         "default": "Ctrl+Q",
+          "mac": "Command+Q"
+      },
+      "description": "Quote Clipper"
+    }
+  },
   "content_scripts": [
       {
          "matches": [
