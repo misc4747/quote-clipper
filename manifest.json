@@ -1,7 +1,7 @@
 {
   "name": "Quote Clipper",
   "description": "選択テキストの各行の始めに\"> \"をつけて、クリップボードにコピーします。",
-  "version": "1.1",
+  "version": "1.2",
   "manifest_version": 3,
   "permissions": ["activeTab","scripting","contextMenus", "clipboardWrite"],
   "background": {
@@ -14,7 +14,7 @@
     "quote-clipper": {
       "suggested_key": {
          "default": "Ctrl+Q",
-          "mac": "Command+Q"
+          "mac": "Option+Q"
       },
       "description": "Quote Clipper"
     }
