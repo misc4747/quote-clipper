@@ -14,7 +14,7 @@
     "quote-clipper": {
       "suggested_key": {
          "default": "Ctrl+Q",
-          "mac": "Option+Q"
+         "mac": "Command+Shift+X"
       },
       "description": "Quote Clipper"
     }
