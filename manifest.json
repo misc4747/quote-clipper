@@ -3,7 +3,16 @@
   "description": "選択テキストの各行の始めに\"> \"をつけて、クリップボードにコピーします。",
   "version": "1.2",
   "manifest_version": 3,
-  "permissions": ["activeTab","scripting","contextMenus", "clipboardWrite"],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "clipboardWrite",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
     "service_worker": "js/background.js"
   },
