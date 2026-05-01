@@ -22,7 +22,7 @@
     "quote-clipper": {
       "suggested_key": {
          "default": "Ctrl+Q",
-         "mac": "Command+Shift+X"
+         "mac": "MacCtrl+Q"
       },
       "description": "Quote Clipper"
     }
