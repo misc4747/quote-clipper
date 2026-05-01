@@ -7,8 +7,7 @@
     "activeTab",
     "scripting",
     "contextMenus",
-    "clipboardWrite",
-    "tabs"
+    "clipboardWrite"
   ],
   "host_permissions": [
     "<all_urls>"
