@@ -8,3 +8,10 @@
 
 テキストを選択した上で右クリックするとコンテクストメニューに「選択範囲を引用形式でコピー」という欄が追加されるので、それを左クリックで選択するとクリップボードに入ります。
 また、WindowsのショートカットキーはCtrl+Q、MacのショートカットキーはControl+Qとなります。
+
+## Files
+
+- `manifest.json`: Chrome拡張の設定
+- `js/constants.js`: background/content scriptで共有する定数
+- `js/background.js`: コンテクストメニュー、ショートカット、クリップボードコピー処理
+- `js/content.js`: ページ上の選択テキスト取得処理

@@ -21,18 +21,21 @@
   "commands": {
     "quote-clipper": {
       "suggested_key": {
-         "default": "Ctrl+Q",
-         "mac": "MacCtrl+Q"
+        "default": "Ctrl+Q",
+        "mac": "MacCtrl+Q"
       },
       "description": "Quote Clipper"
     }
   },
   "content_scripts": [
-      {
-         "matches": [
-            "<all_urls>"
-         ],
-         "js": ["js/content.js"]
-      }
-   ]
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/constants.js",
+        "js/content.js"
+      ]
+    }
+  ]
 }
