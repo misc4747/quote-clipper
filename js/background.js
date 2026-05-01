@@ -66,7 +66,7 @@ const copyToClipboard = async (tabId, text) => {
   });
 };
 
-const handleQuoteClipper = async (selectionText) => {
+const handleQuoteClipper = async () => {
   try {
     const tab = await getActiveTab();
     if (!tab?.id) {
@@ -76,7 +76,7 @@ const handleQuoteClipper = async (selectionText) => {
 
     if (!await canAccessTab(tab.id)) return;
 
-    const text = selectionText ?? await getSelectionFromTab(tab.id);
+    const text = await getSelectionFromTab(tab.id);
     const quotedText = toQuoteFormat(text);
     await copyToClipboard(tab.id, quotedText);
   } catch (error) {
@@ -88,7 +88,7 @@ chrome.runtime.onInstalled.addListener(createContextMenu);
 chrome.runtime.onStartup.addListener(createContextMenu);
 chrome.contextMenus.onClicked.addListener((info) => {
   if (info.menuItemId === CONTEXT_MENU_ID) {
-    handleQuoteClipper(info.selectionText);
+    handleQuoteClipper();
   }
 });
 chrome.commands.onCommand.addListener((command) => {
